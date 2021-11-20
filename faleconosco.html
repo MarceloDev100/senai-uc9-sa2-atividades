@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale conosco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/faleconosco.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="center grid-position">
+            <a href="index.html"><img src="img/logo.png" alt="icone Game Mania" class="logo"></a>
+            <div class="access-area">
+                <span><a href="login.html"><img src="img/login-icon.png" alt=""></a></span>
+                <span><a href="meucarrinho.html"><img src="img/cart-icon.png" alt=""></a></span>
+                <div>
+                    <span class="user" id="user"></span>
+                </div>
+            </div>
+        </div>
+  </header>
+    <div class="contact-us">
+        <h1>Fale conosco</h1>
+        <form action="">
+            <label for="name">Nome completo</label>
+            <input type="text" placeholder="Insira seu nome" name="name" id="name">
+            <label for="tel">Telefone fixo</label>
+            <input type="tel" placeholder="(00)0000-0000" name="tel" id="tel" onkeypress="phoneMask(this, phone); " onblur="mask(this, phone);">
+            <label for="mobile">Celular</label>
+            <input type="tel" placeholder="(00)00000-0000" name="mobile" id="mobile" onkeypress="mobileMask(this, mobile);" onblur="mobileMask(this, mobile);">
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Insira o seu e-mail" name="email" id="email">
+            <label for="message">Mensagem</label>
+            <textarea name="message" cols="30" rows="5" id="message"></textarea>
+            <div class="options">
+                <a href="#"><i class="fas fa-home"></i>Home</a>
+                <button type="button" onclick="send()"><i class="fas fa-share"></i>Enviar</button>
+            </div>
+        </form>
+    </div>
+    <footer class="footer-section container-fluid">
+        <div class="center">
+            <div class="row">
+                <div class="col-4">
+                    <a href="#">
+                        <p>Ofertas</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <p>Escolha como pagar</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <p>Frete grátis</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <a href="#">
+                        <p>Política de troca</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <p>Política de privacidade</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <p>Dúvidas</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit-cards center">
+            <div class="row">
+                <span>Aceitamos</span>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-1 credit-card-box">
+                            <img src="img/master-card-icon.png" alt="icone master card">
+                        </div>
+                        <div class="col-1 credit-card-box">
+                            <img src="img/visa-icon.png" alt="ícone visa card">
+                        </div>
+                        <div class="col-1 credit-card-box">
+                            <img src="img/maestro-card-icon.png" alt="ícone maestro card">
+                        </div>
+                        <div class="col-1 credit-card-box">
+                            <img src="img/pix-icon-card.png" alt="ícone pix">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media center">
+            <div class="row">
+                <span>Siga-nos</span>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-1 social-media-box">
+                            <a href="#"><img src="img/facebook-icon.png" alt="icone facebook"></a>
+                        </div>
+                        <div class="col-1 social-media-box">
+                            <a href="#"><img src="img/instagram-icon.png" alt="ícone instagram"></a>
+                        </div>
+                        <div class="col-1 social-media-box">
+                            <a href="#"><img src="img/youtube-icon.png" alt="ícone youtube"></a>
+                        </div>
+                        <div class="col-1 social-media-box">
+                            <a href="#"><img src="img/twitter-icon.png" alt="ícone twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="rights">All rights reserved 2021 - Game Mania Informática CNPJ 00.000.000/0005</p>
+
+        <script src="https://kit.fontawesome.com/b1f6b692a6.js" crossorigin="anonymous"></script>
+
+        <script>
+
+            let name      = document.getElementById("name")
+            let tel       = document.getElementById("tel")
+            let mobileEl  = document.getElementById("mobile")
+            let email     = document.getElementById("email")
+            let message   = document.getElementById("message")
+
+            function send(){
+                let data = ""
+                data += name.value + "\n"
+                data += tel.value + "\n"
+                data += mobileEl.value + "\n"
+                data += email.value + "\n"
+                data += message.value + "\n"
+                console.log(data)
+            }
+
+
+            function phoneMask(o, f) {
+                setTimeout(function() {
+                var v = phone(o.value);
+                if (v != o.value) {
+                   o.value = v;
+                }
+             }, 1);
+            }
+
+            function mobileMask(o, f) {
+                setTimeout(function() {
+                var v = mobile(o.value);
+                if (v != o.value) {
+                   o.value = v;
+                }
+             }, 1);
+            }
+
+            function phone(v) {
+                var r = v.replace(/\D/g, "");
+                r = r.replace(/^0/, "");
+                if (r.length > 11) {
+                  r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+                } else if (r.length > 5) {
+                  r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+                } else if (r.length > 2) {
+                  r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+                } else {
+                  r = r.replace(/^(\d*)/, "($1");
+                }
+                return r;
+            }
+
+           function mobile(v) {
+                var r = v.replace(/\D/g, "");
+                r = r.replace(/^0/, "");
+                if (r.length > 10) {
+                  r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+                } else if (r.length > 5) {
+                  r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+                } else if (r.length > 2) {
+                  r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+                } else {
+                  r = r.replace(/^(\d*)/, "($1");
+                }
+                return r;
+            }
+
+        </script>
+
+    </footer>
+</body>
+</html>

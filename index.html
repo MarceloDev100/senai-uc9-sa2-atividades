@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game Mania</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styleIndex.css">
+    </head>
+    <body onload="loadProducts()">
+        <header>
+            <div class="center header-position">
+                <div class="logo" data-toggle="tooltip" data-placement="right" title="Login">
+                    <a href="#"><img src="img/logo.png" alt="Logo do site Game Mania"></a>
+                </div>
+                <div class="access-box">
+                    <div class="menu-bar" id="menu-bar" onclick="//onShowMenu()">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <div class="login-box">
+                        <a href="login.html"><img src="img/login-icon.png" class="login-icon" alt="ícone de login"></a>
+                        <a href="meucarrinho.html"><img src="img/cart-icon.png" class="cart-icon" alt="ícone de carrinho">
+                        <span class="cart-items">1</span></a>  
+                    </div>
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="Busque seu produto">
+                        <a href="" class="search-icon"><img src="img/search-icon.png" alt="ícone de pesquisa"></a>
+                    </div>
+                    <nav class="menu" id="menu">
+                        <div class="close-menu" id="close-menu" onclick="//onCloseMenu()">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <a href="">Início</a>
+                        <a href="">Notebooks</a>
+                        <a href="">Tablets</a>
+                        <a href="">Pc Gamers</a>
+                        <a href="">Jogos</a>
+                        <a href="">Smartphones</a>
+                        <a href="meuspedidos.html">Meus pedidos</a>
+                        <div class="access-links" id="access-links">
+                            <a href="login.html">Login</a>
+                            <a href="meucarrinho.html">Carrinho</a>
+                            <form class="search-form">
+                                <label for="search">Pesquisar</label>
+                                <div class="menu-input">
+                                    <input type="text" id="search">
+                                    <a href="#"><img src="img/search-icon.png" alt="icone pesquisa menu barra"></a>
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/foto1.jfif" class="d-block w-100" alt="mesa com ps5 e jogos">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/foto2.jpg" class="d-block w-100" alt="criança jogando um game">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/foto3.jpg" class="d-block w-100" alt="mesa com notebook e celular">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <section class="brands-section">
+            <div class="brands-box center">
+                <img src="img/ps5-icon.png" alt="ícone do Playstation">
+                <img src="img/sony-icon.png" alt="ícone da Sony">
+                <img src="img/dell-icon.png" alt="ícone da Dell">
+                <img src="img/samsung-icon.png" alt="ícone da Samsung">
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <div class="strip-box">
+                <span>Escolha uma categoria</span>
+            </div>
+            <div class="categories-box">
+                <div class="categories center">
+                    <a href="#">
+                        <div class="image-box">
+                            <img src="img/pc-notebook-icon.png" alt="categoria pc & notebook">
+                            <p>pc & notebooks</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="image-box">
+                            <img src="img/smartphone-icon.png" alt="categoria smartphone">
+                            <p>smartphones</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="image-box">
+                            <img src="img/joystick-icon.png" alt="categoria console">
+                            <p>consoles</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="image-box">
+                            <img src="img/audio-icon.png" alt="categoria audio">
+                            <p>áudio</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="image-box">
+                            <img src="img/tablet-icon.png" alt="categoria tablet">
+                            <p>tablets</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="more-categories-box center">
+                    <a href="maiscategorias.html">Mais categorias</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-products-section">
+            <div class="strip-box">
+                <span>Destaques</span>
+            </div>
+            <div class="products-box">
+                <div class="products center" id="products">
+                    <a href="#">
+                        <div class="card">
+                            <div class="offer" id="box">
+                                <span>Oferta</span>
+                            </div>
+                            <div class="image-box"><img src="img/playstation-image.png" alt="imagem playstation"></div>
+                            <div class="details">
+                                <p class="title">Playstation-5</p>
+                                <p class="price-before">De R$ 6.300,00</p>
+                                <p class="price-now">Por R$ 5.700,00</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <div class="offer">
+                                <span>Oferta</span>
+                            </div>
+                            <div class="image-box"><img src="img/joystick-image.png" alt="imagem  joystick"></div>
+                            <div class="details">
+                                <p class="title">Joystick Playstation</p>
+                                <p class="price-before">De R$ 379,99</p>
+                                <p class="price-now">Por R$ 359,99</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <div class="offer">
+                                <span>Oferta</span>
+                            </div>
+                            <div class="image-box"><img src="img/teclado-image.png" alt="imagem  teclado"></div>
+                            <div class="details">
+                                <p class="title">Teclado gamer</p>
+                                <p class="price-before">De R$ 249,99</p>
+                                <p class="price-now">Por R$ 235,99</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <div class="offer">
+                                <span>Oferta</span>
+                            </div>
+                            <div class="image-box"><img src="img/volante-image.png" alt="imagem  volante com pedal"></div>
+                            <div class="details">
+                                <p class="title">Volante com pedal</p>
+                                <p class="price-before">De R$ 3.200,00</p>
+                                <p class="price-now">Por R$ 2.999,99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="more-products-box center">
+                    <a href="maisprodutos.html">Mais produtos</a>
+                </div>
+
+                <div class="stamps-box">
+                         <div class="stamps">
+                             <div class="stamp"><img src="img/selo1-lg.png" alt="selo de confiança e qualidade"></div>
+                             <div class="stamp"><img src="img/selo2-lg.png" alt="selo compra 100% segura"></div>
+                             <div class="stamp"><img src="img/selo3-lg.png" alt="selo garantia de 7 dias"></div>
+                             <div class="stamp"><img src="img/selo4-lg.png" alt="selo reembolso garantido"></div>
+                           </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="visit-section">
+              <div class="strip-box">
+                  <span>Faça-nos uma visita !</span>
+              </div>
+              <div class="contact-box center">
+                      <div class="tel-box">
+                          <a href="tel:+55210000-0000"><img src="img/phone-icon.png" alt="ícone telefone"><span>Telefone: (21)0000-0000</span></a>  
+                      </div>
+                      <div class="address-box">
+                          <img src="img/location-icon.png" alt="ícone localização">
+                          <span>Av. Presidente Vargas, s/n - RJ</span>
+                      </div>
+                      <div class="email-box">
+                          <a href="mailto:contato@gamemania.com"><img src="img/email-icon.png" alt="ícone e-mail"><span>Email: contato@gamemania.com</span></a>
+                      </div>
+                      <div class="user-contact">
+                          <a href="faleconosco.html">Fale conosco</a>
+                      </div>
+              </div>
+              <div class="map-newsletter-box center">
+                  <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2495790331163!2d-43.18951658441857!3d-22.904163543536946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f6b9ebdff0d%3A0xfddce16d156a199e!2sAv.%20Pres.%20Vargas%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1635694260490!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+                  <div class="newsletter-box">
+                      <div class="news-title-box">
+                          <img src="img/newsletter-icon.png" alt="ícone newsletter">
+                          <span>Receba nossas novidades e tenha descontos especiais!</span>
+                      </div>
+                      <div class="news-email-box">
+                          <form action="">
+                              <div class="email-label"><label for="news-email">Email*</label></div>
+                              <input type="email" id="news-email">
+                              <button onclick="sendEmail()" type="button">Enviar</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+        </section>
+
+        <footer class="footer-section container-fluid">
+            <div class="center">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="#">
+                            <p>Ofertas</p>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">
+                            <p>Escolha como pagar</p>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">
+                            <p>Frete grátis</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <a href="#">
+                            <p>Política de troca</p>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">
+                            <p>Política de privacidade</p>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">
+                            <p>Dúvidas</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="credit-cards center">
+                <div class="row">
+                    <span>Aceitamos</span>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-1 credit-card-box">
+                                <img src="img/master-card-icon.png" alt="icone master card">
+                            </div>
+                            <div class="col-1 credit-card-box">
+                                <img src="img/visa-icon.png" alt="ícone visa card">
+                            </div>
+                            <div class="col-1 credit-card-box">
+                                <img src="img/maestro-card-icon.png" alt="ícone maestro card">
+                            </div>
+                            <div class="col-1 credit-card-box">
+                                <img src="img/pix-icon-card.png" alt="ícone pix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-media center">
+                <div class="row">
+                    <span>Siga-nos</span>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-1 social-media-box">
+                                <a href="#"><img src="img/facebook-icon.png" alt="icone facebook"></a>
+                            </div>
+                            <div class="col-1 social-media-box">
+                                <a href="#"><img src="img/instagram-icon.png" alt="ícone instagram"></a>
+                            </div>
+                            <div class="col-1 social-media-box">
+                                <a href="#"><img src="img/youtube-icon.png" alt="ícone youtube"></a>
+                            </div>
+                            <div class="col-1 social-media-box">
+                                <a href="#"><img src="img/twitter-icon.png" alt="ícone twitter"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="rights">All rights reserved 2021 - Game Mania Informática CNPJ 00.000.000/0005</p>
+
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b1f6b692a6.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="js/scriptIndex.js"></script>
+    </body>
+</html>

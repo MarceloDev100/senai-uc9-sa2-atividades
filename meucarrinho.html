@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu carrinho - Game Mania</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/meucarrinhostyle.css">
+    </head>
+    <body>
+        <header class="container-fluid">
+            <div class="center grid-container">
+                <a href="index.html" id="to-top"><img src="img/logo.png" alt="icone Game Mania" class="logo"></a>
+                <div class="access-area">
+                    <a href="login.html"><img src="img/login-icon.png" alt=""></a>
+                </div>
+            </div>
+        </header>
+        <section class="myorders">
+            <div class="box-cart center">
+                <div class="product">
+                    <h2 class="title">
+                        <span class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                        <span>Meu carrinho</span>
+                    </h2>
+                    <table class="table">
+                        <thead class="table-title">
+                            <tr>
+                                <th scope="col">Produto</th>
+                                <th scope="col">Qtd</th>
+                                <th scope="col">Entrega</th>
+                                <th scope="col">Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="product-col">
+                                    <img src="img/joystick-image.png" alt="">
+                                    <span>Controle Razer Raion Fightpad, para PS4 e PC, Razer Switch Yellow - RZ06-02940100-R3G1</span>
+                                </td>
+                                <td>
+                                    <div class="qtd-box">
+                                        <button class="minus-button">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input type="tel" maxlength="2" min="0" max="20" value="1" class="qtd-field" readonly>
+                                        <button class="plus-button">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="deadline">Receba até 30 de novembro</div>
+                                </td>
+                                <td>
+                                    <div class="total-price">R$ 359,99</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="order-resume">
+                    <h2>Resumo do pedido</h2>
+                    <ul class="order-details">
+                        <li>
+                            <label for=""><span class="qtd">1</span> <span class="product-label">Produto</span></label>
+                            <span class="total-price">R$ 359,99</span>
+                        </li>
+                        <li>
+                            <label for="">Frete</label>
+                            <span>R$ 0,00</span>
+                        </li>
+    
+                        <li>
+                            <h4 style="display: inline-block;">Total</h4>
+                            <span>
+                                <strong class="total-price">R$ 359,99</strong>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="forward-button">
+                        <button>Continuar</button>
+                    </div>
+                    <p class="add-more">
+                        <a href="#">Adicionar mais produtos</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="options center">
+                <a href="index.html"><i class="fas fa-home"></i>Home</a>
+                <a href="#to-top"><i class="fas fa-arrow-up"></i>Ir ao topo</a>
+            </div>
+        </section>
+
+        <footer class="footer-section container-fluid">
+            <div class="center">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="#">
+                            <p>Ofertas</p>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">
+                            <p>Escolha como pagar</p>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">
+                            <p>Frete grátis</p>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-4">
+                        <a href="#">
+                            <p>Política de troca</p>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">
+                            <p>Política de privacidade</p>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">
+                            <p>Dúvidas</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="credit-cards center">
+                <div class="row">
+                    <span>Aceitamos</span>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-1 credit-card-box">
+                                <img src="img/master-card-icon.png" alt="icone master card">
+                            </div>
+                            <div class="col-1 credit-card-box">
+                                <img src="img/visa-icon.png" alt="ícone visa card">
+                            </div>
+                            <div class="col-1 credit-card-box">
+                                <img src="img/maestro-card-icon.png" alt="ícone maestro card">
+                            </div>
+                            <div class="col-1 credit-card-box">
+                                <img src="img/pix-icon-card.png" alt="ícone pix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="social-media center">
+                <div class="row">
+                    <span>Siga-nos</span>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-1 social-media-box">
+                                <a href="#"><img src="img/facebook-icon.png" alt="icone facebook"></a>
+                            </div>
+                            <div class="col-1 social-media-box">
+                                <a href="#"><img src="img/instagram-icon.png" alt="ícone instagram"></a>
+                            </div>
+                            <div class="col-1 social-media-box">
+                                <a href="#"><img src="img/youtube-icon.png" alt="ícone youtube"></a>
+                            </div>
+                            <div class="col-1 social-media-box">
+                                <a href="#"><img src="img/twitter-icon.png" alt="ícone twitter"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <p class="rights">All rights reserved 2021 - Game Mania Informática CNPJ 00.000.000/0005</p>
+    
+        </footer>
+
+        <script>
+
+            const qtdMin = 0
+            const qtdMax = 20;
+            const joystickPrice = 359.99;
+            let plusButton      = document.querySelector('.plus-button');
+            let minusButton     = document.querySelector('.minus-button');
+            let qtdField        = document.querySelector('.qtd-field');
+            let qtdEl           = document.querySelector('.qtd');
+            let productLabelEl  = document.querySelector('.product-label');
+            let totalPriceEl    = document.querySelectorAll('.total-price');
+            
+            totalPriceEl.innerHTML  = 'R$ ' + joystickPrice;
+
+            let value = qtdField.value;      
+          
+            plusButton.addEventListener('click', function () {
+                             
+                if(value >= qtdMax){
+                    qtdField.value = qtdMax;
+                    return false;
+                }
+
+                qtdField.value = ++value;
+                qtdEl.textContent = value; 
+
+                totalPriceEl.forEach(el =>  el.innerHTML = 'R$ ' + (joystickPrice * value).toFixed(2))  
+                
+                if(value > 1){
+                   productLabelEl.textContent = 'produtos'    
+                }else{
+                   productLabelEl.textContent = 'produto'
+                }
+
+            })
+            
+            minusButton.addEventListener('click', function () {
+                
+                if(value <= qtdMin){
+                    qtdField.value = qtdMin;
+                    return false;
+                }
+
+                qtdField.value = --value;
+                qtdEl.textContent = value;  
+
+                totalPriceEl.forEach(el =>  el.innerHTML = 'R$ ' + (joystickPrice * value).toFixed(2))
+
+                if(value <= 1){
+                   productLabelEl.textContent = 'produto'    
+                }else{
+                   productLabelEl.textContent = 'produtos'
+                }
+ 
+            })
+
+        </script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b1f6b692a6.js" crossorigin="anonymous"></script>
+    </body>
+</html>

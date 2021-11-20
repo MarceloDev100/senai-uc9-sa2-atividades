@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inder';
+    font-size: 25px;
+}
+
+
+body{
+    background-color:  #EFF4FB;
+}
+
+.center{
+    margin: 0 auto;
+    width: 88.54%;
+}
+
+.grid-position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 170px;
+    background-color: #151516;
+    width: 100%;
+    position: relative;
+}
+
+header a .logo{
+    width: 170px;
+    height: 170px;
+}
+
+.access-area span{
+    margin: 0px 10px;
+}
+.contact-us{
+    margin: 3% auto;
+    width: 500px;
+}
+
+.contact-us h1 {
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+.contact-us form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us form label, .contact-us form input, .contact-us form button, .contact-us form textarea{
+    font-size: 18px;
+}
+
+.contact-us form input, .contact-us form textarea{
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-us form label{
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+.contact-us form button{
+    padding: 10px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #000080;
+    border-radius: 10px;
+    border: 0;
+}
+
+.contact-us form button:hover{
+   background-color: #477DCD;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+}
+
+.options a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #000080;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.options a:hover{
+    background-color: #477DCD;
+}
+
+.options a i , .options button i {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0px 5px;
+}
+
+.options button{
+    margin:  0px 10px;
+}
+
+
+/* ***************   FOOTER  ********************* */
+
+footer{
+    background-color: #161515;
+    height: 100%;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+footer  a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color : #477DCD;
+    transition: 0.3s;
+}
+
+.credit-cards .row span, .social-media .row span{
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+footer .credit-cards .col-1{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+
+}
+
+footer .credit-card-box, .social-media-box{
+    margin: 0px 10px;
+}
+
+footer .col-4 p{
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+footer .rights{
+     text-align: center;
+     font-size: 16px;
+     margin: 0;
+}
+
+
+/* ***************   MEDIA QUERIES  ********************* */
+@media  only screen and (max-width: 1100px){
+    header a .logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    footer .col-4 p{
+        font-size: 14px;
+    }
+
+    .credit-cards .row span, .social-media .row span{
+        font-size: 14px;
+    }
+
+    footer .rights{
+        font-size: 14px;
+    }
+} 
+
+
+@media  only screen and (max-width: 768px) {
+     
+    .contact-us{
+        margin: 20px;
+    }
+  
+    .contact-us h1{
+         font-size: 25px;
+         width: 250px;
+    
+    }
+
+    footer .col-4 p{
+        font-size: 12px;
+    }
+
+    .credit-cards .row span, .social-media .row span{
+        font-size: 12px;
+    }
+
+    footer .rights{
+        font-size: 12px;
+    }
+}
+
+@media  only screen and (max-width: 560px){
+    
+    .contact-us{
+        width: 300px;
+    }
+    
+    .contact-us h1{
+        font-size: 20px;
+        width: 250px;
+   
+    }
+
+    .contact-us form label, .contact-us form input{
+        font-size: 16px;
+    }
+
+    .contact-us form input, .contact-us form textarea{
+        width: 300px;
+    }
+}
+
+@media  only screen and (max-width: 340px){
+    .contact-us{
+        width: 250px;
+    }
+    
+    .contact-us h1{
+        font-size: 16px;
+        width: 250px;
+        font-weight: 900;
+   
+    }
+
+    .contact-us form label, .contact-us form input{
+        font-size: 16px;
+    }
+
+    .contact-us form input, .contact-us form textarea{
+        width: 250px;
+    }
+}
